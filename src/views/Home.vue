@@ -6,7 +6,7 @@
    <Row type="flex" :gutter="10" justify="center">
         <Col  span="11" :xs="24" :sm="24" :md="11" :lg="11">
         <div class="layout-left">
-           左边内容
+           左边内容1
         </div>
         </Col>
 
