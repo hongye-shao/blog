@@ -4,11 +4,26 @@
    <Navbar></Navbar>
    <Content>
    <Row type="flex" :gutter="10" justify="center">
-        <Col  span="11" :xs="24" :sm="24" :md="11" :lg="11">
-        <div class="layout-left">
-           左边内容1
+    <Col  span="11" :xs="24" :sm="24" :md="11" :lg="11">
+      <div class="layout-left">
+        <div class="recommend-index">
+          <div class="recommentd-top">
+            <Carousel>
+              <CarouselItem>
+              <img src="https://cdn.demo.fastadmin.net/assets/addons/blog/default/example/12.jpg" />
+              </CarouselItem>
+              <CarouselItem>
+              <img src="https://cdn.demo.fastadmin.net/assets/addons/blog/default/example/13.jpg" />
+              </CarouselItem>
+            </Carousel>
+          </div>
+          <div class="recommentd-bottom">
+            <div class="recommentd-item">1</div>
+            <div class="recommentd-item">2</div>
+          </div>
         </div>
-        </Col>
+      </div>
+    </Col>
 
         <Col  span="4" :xs="15" :sm="15" :md="4" :lg="4" >
         <div class="layout-right">
@@ -43,9 +58,23 @@ export default {
 <style scoped>
 
 .layout-left {
-  background: red;
+ 
 }
 .layout-right {
   background: blue;
+}
+.recommentd-top{
+  margin-bottom: 20px;
+}
+.recommentd-bottom {
+  background: yellow;
+  display: flex;
+  justify-content: space-between;
+}
+.recommentd-item{
+      border: dotted;
+      width: 49%;
+      height: 170px;
+      overflow: hidden;
 }
 </style>
