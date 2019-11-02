@@ -35,7 +35,12 @@
                 </ListItem>
               </List>
             </Card>
-           
+            <!-- <Card :padding="0" :bordered="false" :dis-hover="true" style=" background: red;">
+              <img
+                src="https://cdn.demo.fastadmin.net/assets/addons/blog/default/example/12.jpg"
+                style="width:100%"
+              />
+            </Card> -->
           </div>
         </Col>
       </Row>
@@ -63,6 +68,7 @@ export default {
 </script>
 <style scoped>
 .right-card-title {
+ 
   font-size: 1.2rem;
   color: #666;
   font-weight: bold;
